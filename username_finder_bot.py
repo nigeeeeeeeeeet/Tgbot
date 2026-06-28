@@ -19,9 +19,9 @@ from aiogram.filters import CommandStart, Command
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # ⚠️ ЗАМЕНИ НА СВОЙ ТОКЕН (получи новый у @BotFather)
-BOT_TOKEN = "ВАШ_ТОКЕН_ЗДЕСЬ"
 
-bot = Bot(token=BOT_TOKEN)
+import os
+BOT_TOKEN = os.environ.get("7912324149:AAFvEDKTPerTr65FtWQgt3VDOr8ennEOiZ4")
 dp = Dispatcher(storage=MemoryStorage())
 
 # Состояния поиска по chat_id
